@@ -6,6 +6,9 @@ import { Comp1Component } from './components/comp1/comp1.component';
 import { Comp2Component } from './components/comp2/comp2.component';
 import { Comp3Component } from './components/comp3/comp3.component';
 import { ColormeDirective } from './directive/colorme.directive';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { ColormeDirective } from './directive/colorme.directive';
     Comp1Component,
     Comp2Component,
     Comp3Component,
-    ColormeDirective
+    ColormeDirective,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule
