@@ -20,6 +20,8 @@ import { FormsModule} from '@angular/forms';
 import { SabaComponent } from './saba/saba.component';
 import { AbaComponent } from './aba/aba.component';
 import { BenComponent } from './ben/ben.component';
+import { IFComponent } from './if/if.component';
+import { ForComponent } from './for/for.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { BenComponent } from './ben/ben.component';
     BindingComponent,
     SabaComponent,
     AbaComponent,
-    BenComponent
+    BenComponent,
+    IFComponent,
+    ForComponent
   ],
   imports: [
     BrowserModule,
