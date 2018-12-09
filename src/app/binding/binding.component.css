@@ -1,0 +1,11 @@
+.coloring {
+    color: purple;
+    background-color: lightgreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+}
+.underline {
+    text-decoration: underline
+}
+.aquaClass {    background-color: aqua; }
+.largeClass {  font-size: 20; }

@@ -15,6 +15,11 @@ import { MatInputModule, MatButtonModule, MatSelectModule, MatRadioModule, MatCa
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashComponent } from './dash/dash.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { BindingComponent } from './binding/binding.component';
+import { FormsModule} from '@angular/forms';
+import { SabaComponent } from './saba/saba.component';
+import { AbaComponent } from './aba/aba.component';
+import { BenComponent } from './ben/ben.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +32,17 @@ import { LayoutModule } from '@angular/cdk/layout';
     FooterComponent,
     HomeComponent,
     MyAddressComponent,
-    DashComponent
+    DashComponent,
+    BindingComponent,
+    SabaComponent,
+    AbaComponent,
+    BenComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
+
     MatInputModule,
     MatButtonModule,
     MatSelectModule,
@@ -41,7 +52,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatGridListModule,
     MatMenuModule,
     MatIconModule,
-    LayoutModule
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

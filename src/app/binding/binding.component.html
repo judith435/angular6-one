@@ -1,0 +1,15 @@
+<p>
+ {{interpolation}}
+</p>
+<div [innerHtml]="attribute" (click)="showMe()" [style.cursor]="'pointer'" [style.background-color]="'yellow'"></div>
+<div [innerHtml]="twoWay" [style.font-size.px]="changeMe()">jhjhj</div>
+<div [class.underline]="IsColoringActive">{{twoWay}} </div>
+<div [class.coloring]="IsColoringActive">{{input1.value}}</div>
+<input type="text" #input1 [(ngModel)]="twoWay" /> 
+<input type="checkbox" [(ngModel)]="IsColoringActive"/>
+<div [style.background-color]="'yellow'">ABCDEFGH....</div>
+<div [ngStyle]="objStyle">Some Israelis were concerned when they read President Donald Trump recent statements to the media about the reasons for his support of Saudi Arabia.</div>
+<div [ngClass]="objClass">Along these lines, the second permanent U.S. interest in the Middle East is to prevent</div>
+
+<input #city />
+<button (click)="showX(city.value)">show city</button>
