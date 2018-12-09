@@ -7,6 +7,9 @@ import { Component, OnInit , OnChanges, DoCheck, AfterContentInit, AfterContentC
 })
 export class SabaComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, 
 AfterViewInit, AfterViewChecked {
+
+  name="******* judith *******";
+
   ngAfterViewChecked(): void {
     console.log("saba: ngAfterViewChecked");
   }

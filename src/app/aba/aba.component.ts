@@ -7,6 +7,8 @@ import { Component, OnInit , OnChanges, DoCheck, AfterContentInit, AfterContentC
 })
 export class AbaComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, 
 AfterViewInit, AfterViewChecked {
+
+
   ngAfterViewChecked(): void {
     console.log("aba: ngAfterViewChecked");
   }
