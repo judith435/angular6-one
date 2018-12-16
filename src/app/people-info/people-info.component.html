@@ -1,0 +1,35 @@
+<ul>
+  <li *ngFor="let person of arr" >
+    <div><b>Id info:</b> {{person.id}} </div>
+    <div><b>name info:</b> {{person.name}} </div>
+    <div><b>gender info:</b> {{person.gender}} </div>
+    <div><b>favorite info:</b> {{person.favorite}} </div>
+  </li>
+</ul>
+
+<div>
+  <select #selected>
+    <option value="1">id: 1</option>
+    <option value="2">id: 2</option>
+  </select>
+  <table style="border: 1 px">
+    <tr> 
+        <th>id</th>
+        <th>name</th>
+        <th>gender</th>
+        <th>favorite</th>
+     </tr>
+    <tr  *ngFor="let p of arr" > 
+      <div  *ngIf="p.id==selected.value">
+          <td>{{p.id}}</td>
+          <td>{{p.name}}</td>
+          <td>{{p.gender}}</td>
+          <td>{{p.favorite}}</td>
+    
+      </div>
+    </tr>
+
+  </table>
+
+
+</div>

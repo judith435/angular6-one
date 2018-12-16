@@ -22,6 +22,8 @@ import { AbaComponent } from './aba/aba.component';
 import { BenComponent } from './ben/ben.component';
 import { IFComponent } from './if/if.component';
 import { ForComponent } from './for/for.component';
+import { PeopleInfoComponent } from './people-info/people-info.component';
+import { MyBtnDirective } from './my-btn.directive';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ForComponent } from './for/for.component';
     AbaComponent,
     BenComponent,
     IFComponent,
-    ForComponent
+    ForComponent,
+    PeopleInfoComponent,
+    MyBtnDirective
   ],
   imports: [
     BrowserModule,

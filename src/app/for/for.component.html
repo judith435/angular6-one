@@ -1,4 +1,12 @@
 <p>
   for works!
 </p>
-<div *ngFor="let element of myArray">{{element}}</div>
+<table>
+  <tr *ngFor="let i of rows"> 
+   <td *ngFor="let j of rows">{{i * j}}</td>
+  </tr>
+</table>
+
+<button appMyBtn selected="aaa.value" #aaa (click)="aaa.value=true" class="btn">aaaa</button>
+<button appMyBtn>bbbb</button>
+<button appMyBtn>cccc </button>
