@@ -24,6 +24,8 @@ import { IFComponent } from './if/if.component';
 import { ForComponent } from './for/for.component';
 import { PeopleInfoComponent } from './people-info/people-info.component';
 import { MyBtnDirective } from './my-btn.directive';
+import { MoviePipe } from './movie.pipe';
+import { CapitalizePipe } from './capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { MyBtnDirective } from './my-btn.directive';
     IFComponent,
     ForComponent,
     PeopleInfoComponent,
-    MyBtnDirective
+    MyBtnDirective,
+    MoviePipe,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,
