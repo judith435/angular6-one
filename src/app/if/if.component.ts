@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+//son of people-info
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-if',
@@ -8,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class IFComponent implements OnInit {
 
   constructor() { }
-
+  priceVal: string;
+  @Output() priceChange = new EventEmitter<String> ();
+  @Input () get price( ) {
+    return this.priceVal;
+  }
+  set price (val) {
+    this.priceVal = val;
+    this.priceChange.emit(val);
+  }
   ngOnInit() {
   }
 var1:string;
