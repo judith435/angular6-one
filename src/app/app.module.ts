@@ -26,6 +26,7 @@ import { PeopleInfoComponent } from './people-info/people-info.component';
 import { MyBtnDirective } from './my-btn.directive';
 import { MoviePipe } from './movie.pipe';
 import { CapitalizePipe } from './capitalize.pipe';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { CapitalizePipe } from './capitalize.pipe';
     PeopleInfoComponent,
     MyBtnDirective,
     MoviePipe,
-    CapitalizePipe
+    CapitalizePipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

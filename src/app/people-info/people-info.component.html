@@ -1,7 +1,10 @@
 <app-if></app-if>
+<input [(ngModel)]="searchArg" />
+<div *ngFor="let s of pipeArray | filter:searchArg">{{s}}</div>  
+<!-- pipe name -> filter -->
 <ul>
   <li *ngFor="let person of arr" >
-    <div><b>Id info:</b> {{person.id}} </div>
+  )  <div><b>Id info:</b> {{person.id}} </div>
     <div><b>name info:</b> {{person.name}} </div>
     <div><b>gender info:</b> {{person.gender}} </div>
     <div><b>favorite info:</b> {{person.favorite}} </div>

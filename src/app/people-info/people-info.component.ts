@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { createMeta } from '@angular/platform-browser/src/browser/meta';
 
 @Component({
   selector: 'app-people-info',
@@ -25,6 +26,10 @@ arrFiltered;
     }
 
   }
+
+  pipeArray = ['cake', 'ice cream', 'chocolate'];
+  searchArg:string;
+  
   arr=[
     {
       "id": 0,
