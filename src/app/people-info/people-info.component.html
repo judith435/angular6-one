@@ -1,4 +1,7 @@
 <app-if></app-if>
+<p>{{person.name}}</p>
+<p>{{personName}}</p>
+<button (click)= >change name</button>
 <input [(ngModel)]="searchArg" />
 <div *ngFor="let s of pipeArray | filter:searchArg">{{s}}</div>  
 <!-- pipe name -> filter -->
