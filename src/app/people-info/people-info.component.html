@@ -9,7 +9,8 @@
 </ul>
 
 <div>
-  <select #selected>
+  <select  (change)="itemSelected(selected.value)" #selected>
+    <option value="0" selected>all</option>
     <option value="1">id: 1</option>
     <option value="2">id: 2</option>
   </select>
@@ -22,7 +23,7 @@
         <th>favorite</th>
         <th>date</th>
      </tr>
-    <tr  *ngFor="let p of arr" > 
+    <tr  *ngFor="let p of arrFiltered" > 
           <td>{{p.id | movie | currency:"ILS"}}</td>
           <td>{{p.name}}</td>
           <td>{{p.gender}}</td>

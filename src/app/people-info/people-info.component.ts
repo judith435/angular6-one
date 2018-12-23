@@ -6,12 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./people-info.component.css']
 })
 export class PeopleInfoComponent implements OnInit {
-
+arrFiltered;
   constructor() { }
 
   ngOnInit() {
+    this.arrFiltered  = this.arr;
   }
+  itemSelected(selectedItem) {
+    debugger
+    if(selectedItem != '0')
+    {
+      //this.arrFiltered = this.arr.filter(x => x.id == selectedItem);
+      this.arrFiltered = this.arr.filter(x => x.gender == 'male');
 
+    }
+    else {
+      this.arrFiltered = this.arr;
+    }
+
+  }
   arr=[
     {
       "id": 0,
